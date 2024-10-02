@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class coin : MonoBehaviour
 {
-    public GameObject spawn;
-    private void OnCollisionEnter(Collision collision)
+  
+    private void OnTriggerEnter(Collider other)
     {
-        if (collision.gameObject.CompareTag("Player"))
+       if(other.gameObject.CompareTag("Player"))
         {
             Debug.Log("Ganaste moneda");
             Destroy(this.gameObject);

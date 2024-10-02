@@ -5,7 +5,7 @@
 
     public class PLayer : MonoBehaviour
 {
-    public float moveSpeed = 2.0f;
+    public float moveSpeed = 1.0f;
     public Transform camara;
     private Rigidbody rb;
 
